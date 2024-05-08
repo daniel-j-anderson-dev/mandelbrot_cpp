@@ -23,9 +23,9 @@ typedef struct Pixel {
     Color color;
 } Pixel;
 
-optional<size_t> escapeTime(complex<double> c, size_t iterationMax);
+optional<size_t> calculateEscapeTime(complex<double> c, size_t iterationMax);
 
-complex<double> pixelToComplex(
+complex<double> pixelCoordsToComplex(
     size_t pixelX,
     size_t pixelY,
     size_t imageWidth,
